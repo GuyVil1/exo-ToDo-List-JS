@@ -1,0 +1,54 @@
+html{
+    font-size: 62.5%;//équivaut à 10px
+    font-family: var(--ff2);
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: var(--ff1);
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    p{
+        flex: 1;
+    }
+    .todo{
+        background: var(--background);
+        flex: 0 0;
+        height: 2rem;
+        border-radius: 3rem;
+        margin-right: 1.5rem;
+
+    }
+}
+
+a{
+    color: var(--text);
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+p{
+    margin: 0;
+    font-size: 2rem;
+}

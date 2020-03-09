@@ -1,0 +1,125 @@
+@import "reset";
+@import "bases";
+@import "variables";
+
+header{
+    grid-area: header;
+    font-family: var(--ff2);
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem 0;
+    background: linear-gradient(to right, var(--light), var(--dark));
+
+}
+
+.grid-container{
+    padding: 5rem 0;
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    // utilisation poussée du grid
+    grid:
+        "emptyl add-task add-task emptyr" auto 
+        "emptyl2 todo-list its-done emptyr2" auto
+        / 15% 35% 35% 15%;  
+}
+
+.emptyl{
+    grid-area: emptyl;
+}
+
+.add-task{
+    grid-area: add-task;
+    background: var(--dark);
+    p{
+        font-size: 3rem;
+        text-align: center;
+        padding: 5rem 0 3rem 0;
+        font-weight: 600;
+    }
+    form{
+        display: block;
+        width: 80%;
+        margin: auto;
+        i{
+            font-size: 4rem;
+            color: var(--light);
+            background-color: rgba(238, 238, 238, 0);
+        }
+        button{
+            background-color: rgba(238, 238, 238, 0);
+            border: none;
+            padding: 1rem;
+        }
+        input{
+            font-size: 4rem;
+            padding: 1rem;
+            width: 90%;
+        }
+        .date{
+            font-size: 2rem;
+            padding: 0.5rem;
+            width: 50%;
+            p{
+                font-size: 3rem;
+                text-align: left;
+                padding: 0;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.emptyr{
+    grid-area: emptyr;
+}
+
+.emptyl2{
+    grid-area: emptyl2;
+}
+
+.todo-list{
+    background: var(--dark);
+    li{
+        border: 1px solid black;
+        padding: 1rem;
+        width: 85%;
+        margin: 0 auto 1rem auto;
+        p{
+            font-size: 3rem;
+        }
+        .todo{
+            background: var(--hint);
+            flex: 0 0 2rem;
+            height: 2rem;
+            border-radius: 3rem;
+            border: 1px solid black;
+            margin-right: 1.5rem;
+        }
+        .done{
+            background: var(--clear);
+            border: 1px solid black;
+        }
+        i{
+            font-size: 2rem;
+            color: var(--red);
+        }
+        button{
+            background-color: rgba(238, 238, 238, 0);
+            border: none;
+            padding: 1rem;
+        }
+
+    }
+
+}
+
+.its-done{
+    background: var(--dark);
+
+}
+
+.emptyr2{
+    grid-area: emptyr2;
+}

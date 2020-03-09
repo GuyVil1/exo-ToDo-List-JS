@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAA,EAED,KAAK,CAAA,mBAAC,EACN,KAAK,CAAA,kBAAC,EAEN,OAAO,CAAA,QAAC,EACR,SAAS,CAAA,QAAC,EACV,MAAM,CAAA,UAAC,EACP,MAAM,CAAA,KAAC,EACP,YAAY,CAAA,QAAC,EACb,MAAM,CAAA,KAAC,EACP,QAAQ,CAAA,KAAC,EACT,OAAO,CAAA,MAAC,EACR,MAAM,CAAA,IAAC,GACV",
+    "sources": [
+        "../saas/variables.scss"
+    ],
+    "names": [],
+    "file": "variables.css"
+}

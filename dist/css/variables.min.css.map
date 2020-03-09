@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,AAAA,CAED,KAAK,CAAA,mBAAC,CACN,KAAK,CAAA,kBAAC,CAEN,OAAO,CAAA,QAAC,CACR,SAAS,CAAA,QAAC,CACV,MAAM,CAAA,UAAC,CACP,MAAM,CAAA,KAAC,CACP,YAAY,CAAA,QAAC,CACb,MAAM,CAAA,KAAC,CACP,QAAQ,CAAA,KAAC,CACT,OAAO,CAAA,MAAC,CACR,MAAM,CAAA,IAAC,CACV",
+    "sources": [
+        "../../saas/variables.scss"
+    ],
+    "names": [],
+    "file": "variables.min.css"
+}

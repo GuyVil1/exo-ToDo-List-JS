@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="dist/css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Caveat:400,700&display=swap" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/83f4286022.js"
+    crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1>ToDo List &copy2020</h1>
+    </header>
+    <div class="grid-container">
+        <div class="emptyl"></div>
+        <div class="add-task">
+            <p>Entre une nouvelle tâche</p>
+            <form>
+                <input type="text">
+                <div class="date">
+                    <p>Dead Line</p>
+                    <input type="datetime-local" value="2020-12-12T00:30" class="date">
+                    <button><i class="fas fa-paper-plane"></i></button>
+
+                </div>
+            </form>
+        </div>
+        <div class="emptyr"></div>
+        <!-- Affichage des tâches à accomplir -->
+        <div class="emptyl2"></div>
+        <div class="todo-list">
+            <ul>
+                <!-- <li>
+                    <span class="todo done"></span>
+                    <p>text</p>
+                    <button><i class="fas fa-edit" alt="edit"></i></button>
+                    <button><i class="fas fa-trash-alt" alt="delete"></i></button>
+                </li> -->
+            </ul>
+        </div>
+        <div class="its-done"></div>
+        <div class="emptyr2"></div>
+    </div>
+
+</body>
+</html>
