@@ -27,9 +27,34 @@ window.onload = () => {
             editMode: false
         },
         {
-            text: 'je suis une seconde tâche à accomplir',
+            text: 'je suis une tâche accomplie',
             done: true,
             editMode: false
+        },
+        {
+            text: 'tu peux valider une tâche en cliquant dessus',
+            done: false,
+            editMode: false
+        },
+        {
+            text: 'tu peux éditer une tâche en cliquant sur le crayon',
+            done: false,
+            editMode: false
+        },
+        {
+            text: 'tu peux supprimer une tâche en cliquant sur la poubelle',
+            done: false,
+            editMode: false
+        }, 
+        {
+            text: "en mode edition, clique sur la croix pour annuler l'édition",
+            done: false,
+            editMode: true
+        },
+        {
+            text: "et sur la disquette pour sauvegarder tes changements",
+            done: false,
+            editMode: true
         }
     ];
 
@@ -93,6 +118,18 @@ window.onload = () => {
         buttonSave.innerHTML = '<i class="fas fa-save"></i>';
         const buttonCancel = document.createElement('button');
         buttonCancel.innerHTML = '<i class="fas fa-window-close"></i>';
+        // Je rajoute un événement sur mon bouton
+        buttonCancel.addEventListener('click', event => {
+            event.stopPropagation();
+            // si j'appuie sur cancel, je rappelle ma fonction togggleEditmode
+            toggleEditMode(index);
+        });
+        // Je rajoute enfin un événement sur mon bouton save
+        buttonSave.addEventListener('click', event => {
+            event.stopPropagation();
+            // J'appelle ma fonction editTodo
+            editTodo(index, input);
+        });
         // Je greffe tout à la liste qui sera créée
         li.append(input, buttonCancel, buttonSave);
         return li;
@@ -122,6 +159,13 @@ window.onload = () => {
     // Fonction éditer tâche
     const toggleEditMode = (index) =>{
         todos[index].editMode = !todos[index].editMode;
+        displayTodo();
+    };
+    // fonction pour enregistrer la tâche éditée
+    const editTodo = (index, input) => {
+        const value = input.value;
+        todos[index].text = value;
+        todos[index].editMode = false;
         displayTodo();
     };
     displayTodo();

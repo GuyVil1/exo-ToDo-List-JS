@@ -30,7 +30,7 @@ header { grid-area: header; font-family: var(--ff2); font-size: 3rem; text-align
 
 .emptyl { grid-area: emptyl; }
 
-.add-task { grid-area: add-task; background: var(--dark); }
+.add-task { grid-area: add-task; background: var(--dark); padding-bottom: 3rem; }
 
 .add-task p { font-size: 3rem; text-align: center; padding: 5rem 0 3rem 0; font-weight: 600; }
 
