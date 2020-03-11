@@ -26,7 +26,7 @@ p { margin: 0; font-size: 2rem; }
 
 header { grid-area: header; font-family: var(--ff2); font-size: 3rem; text-align: center; padding: 3rem 0; background: -webkit-gradient(linear, left top, right top, from(var(--light)), to(var(--dark))); background: linear-gradient(to right, var(--light), var(--dark)); }
 
-.grid-container { padding: 5rem 0; background-image: url(/img/background.jpg); background-size: cover; background-attachment: fixed; display: -ms-grid; display: grid; grid: "emptyl add-task add-task emptyr" auto  "emptyl2 todo-list its-done emptyr2" auto / 15% 35% 35% 15%; }
+.grid-container { padding: 5rem 0; background-image: url(/img/background.jpg); background-size: cover; background-attachment: fixed; display: -ms-grid; display: grid; grid: "emptyl add-task add-task emptyr" auto  "emptyl2 todo-list its-done emptyr2" auto / 15% 35% 35% 15%; }
 
 .emptyl { grid-area: emptyl; }
 
@@ -50,7 +50,7 @@ header { grid-area: header; font-family: var(--ff2); font-size: 3rem; text-align
 
 .emptyl2 { grid-area: emptyl2; }
 
-.todo-list { background: var(--dark); }
+.todo-list { background: var(--dark); min-height: 70vh; }
 
 .todo-list li { border: 1px solid black; padding: 1rem; width: 85%; margin: 0 auto 1rem auto; }
 
@@ -63,6 +63,8 @@ header { grid-area: header; font-family: var(--ff2); font-size: 3rem; text-align
 .todo-list li i { font-size: 2rem; color: var(--red); }
 
 .todo-list li button { background-color: rgba(238, 238, 238, 0); border: none; padding: 1rem; }
+
+.todo-list li input { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; font-family: var(--ff2); padding: 1rem; font-size: 2rem; }
 
 .its-done { background: var(--dark); }
 
